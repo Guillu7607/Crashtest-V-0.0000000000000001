@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cgc0q7g6ww6ob"]
+
+[ext_resource type="Texture2D" uid="uid://c365s0hwrskoy" path="res://Images/Maptile/Sprite-0001.jpg" id="1_h06de"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(1415, 318)
+
+[node name="Nivel" type="Node2D" unique_id=1359451600]
+position = Vector2(100, 334)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1890824088]
+position = Vector2(704.50006, 143.5)
+scale = Vector2(118.416664, 24.916666)
+texture = ExtResource("1_h06de")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=516207131]
+position = Vector2(152, 143)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=493954952]
+position = Vector2(550.5, 11)
+shape = SubResource("RectangleShape2D_bhunq")
