@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://dvmfgjfe0y5b"]
 
 [node name="Node2D" type="Node2D" unique_id=835312375]
+
+[node name="Timer" type="Timer" parent="." unique_id=2117346867]
+wait_time = 0.001
+autostart = true
+
+[node name="Label" type="Label" parent="." unique_id=489725249]
+offset_left = 76.0
+offset_top = 14.0
+offset_right = 116.0
+offset_bottom = 37.0
