@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bdofwkbpj3p6a"]
+
+[ext_resource type="Script" uid="uid://lbjcxkti2d2o" path="res://scripts/Endscreen.gd" id="1_4anwy"]
+[ext_resource type="Texture2D" uid="uid://dld8dhw00k2y4" path="res://icon.svg" id="2_jv4ou"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6u4tv"]
+size = Vector2(123.5, 123)
+
+[node name="EndFlag" type="Node2D" unique_id=674438186]
+position = Vector2(-2, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1981579479]
+position = Vector2(672.25, 367.5)
+shape = SubResource("RectangleShape2D_6u4tv")
+script = ExtResource("1_4anwy")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=103766184]
+position = Vector2(-1.25, -0.5)
+texture = ExtResource("2_jv4ou")

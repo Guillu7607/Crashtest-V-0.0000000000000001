@@ -1,10 +1,11 @@
 extends CharacterBody2D
-var sp: float = 100
+var sp: float = 30
 var jumpvel = -700
 @onready var sprite = $jug
 @onready var time = $Coyote
 var jump = false
 @onready var ene = $Enemy
+var counter=0
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity()*delta
@@ -26,5 +27,9 @@ func _process(delta: float):
 		velocity.y = jumpvel
 	if position.y>500:
 		position=Vector2(1,1)
-
+		counter+=1
+	if counter==3:
+		get_tree().change_scene_to_file("res://fin.tscn")
+		counter=0
 	move_and_slide()
+	

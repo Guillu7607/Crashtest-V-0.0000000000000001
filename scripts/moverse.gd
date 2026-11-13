@@ -20,4 +20,5 @@ func _physics_process(delta):
 	if move_timer <= 0.0:
 		choose_new_direction()
 
-	var motion = move_direction * mov * delta
+	var motion = move_direction * mov * delta	
+	
